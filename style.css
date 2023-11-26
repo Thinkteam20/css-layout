@@ -1,16 +1,15 @@
-/* BEFORE FLEX BOX */
+/* AFTER FLEX BOX ✅ */
+
+/* BENEFIT not much code to make it responsive */
+/* super responsive */
+
+body{
+  display: flex;
+  justify-content: space-between;
+}
 
 .box {
   width: 200px;
   height: 200px;
   background-color: tomato;
-  display: inline-block;
-}
-
-.box:first-child {
-  margin-right: 305px;
-}
-
-.box:last-child {
-  margin-left: 305px;
 }
