@@ -1,15 +1,20 @@
-/* AFTER FLEX BOX ✅ */
+/* ✅ FLEX CONTAINER */
 
-/* BENEFIT not much code to make it responsive */
-/* super responsive */
-
-body{
+.father {
   display: flex;
-  justify-content: space-between;
+
+  /* default row */
+  /* row - Horizontal */
+  /* column - Vertical */
+
+  flex-direction: column-reverse;
+  gap: 10px;
 }
 
 .box {
   width: 200px;
   height: 200px;
   background-color: tomato;
+  color: white;
+  font-size: 36px;
 }
