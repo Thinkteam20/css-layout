@@ -1,3 +1,16 @@
-body {
-  background-color: coral;
+/* BEFORE FLEX BOX */
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  display: inline-block;
+}
+
+.box:first-child {
+  margin-right: 305px;
+}
+
+.box:last-child {
+  margin-left: 305px;
 }
