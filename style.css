@@ -2,13 +2,12 @@
 
 .father {
   display: flex;
-
-  /* default row */
-  /* row - Horizontal */
-  /* column - Vertical */
-
-  flex-direction: column-reverse;
+  flex-direction: row;
+  height: 100vh;
+  /* align-items: stretch; */
+  align-items: center;
   gap: 10px;
+  justify-content: space-around;
 }
 
 .box {
@@ -17,4 +16,7 @@
   background-color: tomato;
   color: white;
   font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
