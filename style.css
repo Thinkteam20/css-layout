@@ -2,15 +2,15 @@
 
 .father {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
   align-items: flex-start;
   /* flex-direction: row; - default */
   height: 100vh;
   /* align-items: stretch; */
   gap: 10px;
 }
- 
+
 .box {
   width: 200px;
   height: 200px;
