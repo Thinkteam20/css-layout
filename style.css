@@ -2,13 +2,18 @@
 
 .father {
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: flex-end;
-  align-items: flex-start;
-  /* flex-direction: row; - default */
+  justify-content: flex-start;
+  /* align-items: center; */
   height: 100vh;
-  /* align-items: stretch; */
   gap: 10px;
+  
+  /* flex-wrap: nowrap; - default */
+  flex-wrap: wrap;
+
+  /* flex-flow (flex-direction, flex-wrap) */
+  flex-flow: row wrap;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap */
 }
 
 .box {
