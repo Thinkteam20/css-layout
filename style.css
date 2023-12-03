@@ -2,14 +2,15 @@
 
 .father {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  /* flex-direction: row; - default */
   height: 100vh;
   /* align-items: stretch; */
-  align-items: center;
   gap: 10px;
-  justify-content: space-around;
 }
-
+ 
 .box {
   width: 200px;
   height: 200px;
