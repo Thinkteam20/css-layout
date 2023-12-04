@@ -3,9 +3,6 @@
 .father {
   display: flex;
   height: 100vh;
-  gap: 10px;
-  /* flex-flow (flex-direction, flex-wrap) */
-  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
@@ -15,32 +12,41 @@
   height: 200px;
   background-color: tomato;
   color: white;
-  font-size: 36px;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* 💡align-self let each child box
-  move by itself.
-
-  on the other hands, 
-  💡align-items 
-  controls entire items inside of
-  the div boxes. 
-*/
-
 .box:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  flex-grow: 2;
+  flex-shrink: 3; 
+  /* 
+    💡 
+    higher number of flex-shrink get 
+    shrink compress item first.
+
+    HIGHER NUMBER = FAST SHRINK!!!❗️
+  */
   background-color: blue;
+}
+
+.box:nth-child(2){
+  background-color: orange;
+  flex-grow: 2;
+
+  /* 💡 flex-shrink:0 does not compress the item */
+  flex-shrink: 0;
+
 }
 
 .box:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 5;
+  flex-grow: 2;
+  flex-shrink: 1;
 }
