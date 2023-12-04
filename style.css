@@ -2,6 +2,7 @@
 
 .father {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -19,34 +20,30 @@
 }
 
 .box:first-child {
+  flex: 0 1 500px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 2;
-  flex-shrink: 3; 
+
   /* 
-    💡 
-    higher number of flex-shrink get 
-    shrink compress item first.
+    CASE1 max-width : 
+      flex-grow: 0;
+      flex-shrink: 5;
+      flex-basis: 500px;
+    
+      SHORTCUT👋
 
-    HIGHER NUMBER = FAST SHRINK!!!❗️
+      flex
+      grow - shrink - flex basis 
   */
-  background-color: blue;
-}
 
-.box:nth-child(2){
-  background-color: orange;
-  flex-grow: 2;
-
-  /* 💡 flex-shrink:0 does not compress the item */
-  flex-shrink: 0;
-
+  /* default shrink - 1  */
 }
 
 .box:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 2;
   flex-shrink: 1;
+  background-color: teal;
 }
