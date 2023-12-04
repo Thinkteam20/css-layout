@@ -8,11 +8,9 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  align-content: start;
 }
 
 .box {
-  order: 5;
   width: 200px;
   height: 200px;
   background-color: tomato;
@@ -23,17 +21,26 @@
   align-items: center;
 }
 
-/* nth-child - target : child! */
-.box:nth-child(3) {
-  background-color: blueviolet;
-  /* order's position is relitive 
-    by default 0 
-    1 -> 2 -> ....
-  */
-  order: 2;
+/* 💡align-self let each child box
+  move by itself.
+
+  on the other hands, 
+  💡align-items 
+  controls entire items inside of
+  the div boxes. 
+*/
+
+.box:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: blue;
 }
 
-.box:nth-child(6) {
-  background-color: aqua;
-  order: -1;
+.box:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 5;
 }
